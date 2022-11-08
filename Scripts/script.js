@@ -1,5 +1,3 @@
-// console.log("Are we there yet?");
-
 // Create variables
 const playersCar = document.querySelector("#players-car");
 const playButton = document.querySelector("#play-game");
@@ -14,8 +12,6 @@ let theCar;
 let numberRevealed;
 let counter = 1;
 let remain = 7;
-let win;
-let lose;
 
 // Create an array of objects for a list of 15 cars with each car displaying a property for color, year, make, model, price, and visual.
 let cars = [
@@ -180,26 +176,21 @@ function TheFirstNumber(){
     theNumber += numberRevealed;
 }
 
-// Create a function for the user to input a number, console log each number they are off from the actual number and for each number they are off, the image of the dollar will be removed
+// Create a function for the user to input a number
+// Console log the user's input number
+// Console log the actual number
+// Console log the difference between the user's number and the actual number
+// Remove a dollar bill image for each number the user's guess is off
+// Alert the user if they won or lost.
 function UserInput(){
     console.log(theInput[counter-1].value);
     console.log(theCar.price.toString()[counter]);
     remain -= Math.abs(theCar.price.toString()[counter] - theInput[counter-1].value);
-    while(remain >= 1){
-        alert("Keep Going!");
-        if(remain < 1){
-            alert("You Lost!");
-        }
-        break;
-    // if(remain > 1){
-    //     console.log("Keep Going!");
-    // }
-    // else if(remain = 1){
-    //     console.log("You Won!")
-    // }
-    // else{
-    //     console.log("You Lose!");
-    // }
+    if(remain <= 0){
+        alert("You Lost!");
+    }
+    else if(counter == 4){
+        alert("You won!");
     }
     console.log(Math.abs(theCar.price.toString()[counter] - theInput[counter-1].value));
     counter++;
@@ -217,6 +208,7 @@ function UserMoney(){
     console.log(remain);
 }
 
+// Create event listeners
 window.addEventListener("DOMContentLoaded", () => {
     // Execute after page load
     playButton.addEventListener("click", function(event){
@@ -235,12 +227,4 @@ window.addEventListener("DOMContentLoaded", () => {
     })
   });
 
-// Create a function to prompt user if they won or lost.
-
-// function RemoveMoney(){
-//     if(theInput[counter-1].value != theCar.price.toString()[counter]){
-//         theMoney -= Math.abs(theCar.price.toString()[counter] - theInput[counter-1].value);
-//     }
-// }
-
-// window.onload = function() { document.getElementsByClassName('transition')[0].classList.add('translateAnimationClass'); }
+// Create a .disabled variable
