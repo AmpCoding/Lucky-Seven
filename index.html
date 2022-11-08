@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title>Lucky Seven</title>
+</head>
+<body>
+    <header>
+        <!-- Create an unordered list to hold all three rules for the game-->
+        <!-- Remove bullet points in CSS -->
+        <ul>
+            <li>Rule #1: The first number of the price of the car is revealed and the user is given seven one-dollar bills.</li>
+            <li>Rule #2: The user must then predict the next number for the price of the car and for every number the user is from the correct number, they must give back one of the dollar bills.</li>
+            <li>Rule #3: If the user has one dollar after all of the numbers in the price of the car are revealed, then the user may purchase the car for one dollar.</li>
+        </ul>
+        <!-- Create an h1 to hold title of the game -->
+        <h1>LUCKY $EVEN</h1>
+    </header>
+
+    <main>
+        <!-- Create a div for the cloud outline where the image of the car will be randomly generated -->
+
+        <button id="play-game">Click here to play game!</button>
+        <div id="flex">
+            <div id="players-car" class="rotator transition">
+            <!-- <svg viewBox='0 0 105 105' >
+                <path d='M 25,60
+                         a 20,20 1 0,0 0,40
+                         h 50
+                         a 20,20 1 0,0 0,-40
+                         a 10,10 1 0,0 -15,-10
+                         a 15,15 1 0,0 -35,10
+                         z' />
+            </svg> -->
+            </div>
+
+        <!-- Create a div where the description of the car will be given  -->
+        <!-- Flex these two divs next to each other in CSS -->
+        <!-- <div id="about-car"> -->
+            <div id="root" class="rotator transition">
+
+            </div>
+        </div>
+
+        <!-- Create a div that will hold the price of the vehicle and for the user to input a number -->
+        <!-- Flex each number into a row -->
+        <table class="container">
+            <tr>
+                <td class="number">
+                    <p>$</p>
+                </td>
+                <td class="number" id="first-number">
+
+                </td>
+                <td class="number">
+                    <p>
+                        <input type="number" placeholder="" class="the-input" id="the-input1" style="width: 190px; font-size: 180px; background-color: #8a00c2;">
+                    </p>
+                </td>
+                <td class="number">
+                    <p>
+                        <input type="number" placeholder="" class="the-input" id="the-input2" style="width: 190px; font-size: 180px; background-color: #8a00c2;">
+                    <!-- </br>
+                        <button class="insert-number">Click here!</button> -->
+                    </p>
+                </td>
+                <td class="number">
+                    <p>
+                        <input type="number" placeholder="" class="the-input" id="the-input3" style="width: 190px; font-size: 180px; background-color: #8a00c2;">
+                    <!-- </br>
+                        <button class="insert-number">Click here!</button> -->
+                    </p>
+                </td>
+                <td class="number">
+                    <p>
+                        <input type="number" placeholder="" class="the-input" id="the-input4" style="width: 190px; font-size: 180px; background-color: #8a00c2;">
+                    <!-- </br>
+                        <button class="insert-number">Click here!</button> -->
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+
+        <button class="insert-number">Click here to check number!</button>
+
+    </main>
+
+    <footer>
+        <!-- Create a div to hold the images of the dollar bills that will be subtracted when a user guesses a number -->
+        <!-- Flex images into a row -->
+        <div class="images">
+
+        </div>
+
+        <!-- <a href="https://github.com/AmpCoding">Github</a> -->
+    </footer>
+    <script src="./Scripts/script.js"></script>
+</body>
+</html>

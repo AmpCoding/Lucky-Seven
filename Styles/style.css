@@ -1,0 +1,176 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:linear-gradient(to right, #8a00c2, #a000c8, #b100cd);
+}
+
+
+ul li{
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+ul li:hover {
+    text-decoration: underline;
+    color: #e69b00;
+    font-weight: 700;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #e69b00;
+    /* color: #e6b400; */
+    font-size: 100px;
+}
+
+#play-game{
+  background-color: #e69b00;
+  margin-left: 41%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+#flex{
+  margin-top: 40px;
+}
+
+#players-car{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#root{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+svg {
+    height: 50%;
+    width: 50%;
+  }
+  path {
+    fill: white;
+    stroke: black;
+    stroke-width: 2;
+    stroke-linejoin: round;
+  }
+  path:hover {
+    fill: aliceblue;
+    stroke: lightskyblue;
+  }
+
+  /* .rotator {
+    width: 100px;
+    height: 100px;
+    margin-left: 400px;
+    background-color:teal;
+  }
+  .transition {
+    -webkit-transition: all 2000s linear;
+    -moz-transition: all 2000s linear;
+    -ms-transition: all 2000s linear;
+    -o-transition: all 2000s linear;
+    transition: all 2000s linear;
+  }
+  .translateAnimationClass {
+    -webkit-transform: rotateX(43200deg) rotateY(14400deg);
+    -moz-transform: rotateX(43200deg) rotateY(14400deg);
+    -ms-transform: rotateX(43200deg) rotateY(14400deg);
+    -o-transform: rotateX(43200deg) rotateY(14400deg);
+    transform: rotateX(43200deg) rotateY(14400deg);
+  }
+  .animation {
+    -webkit-animation: rotator 25s linear infinite;
+    -moz-animation: rotator 25s linear infinite;
+    -ms-animation: rotator 25s linear infinite;
+    -o-animation: rotator 25s linear infinite;
+    animation: rotator 25s linear infinite;
+  }
+
+  @-webkit-keyframes rotator {
+    0%   { -webkit-transform: rotateX(0deg)    rotateY(0deg);    }
+    100% { -webkit-transform: rotateX(1080deg) rotateY(360deg);  }
+  }
+  @-moz-keyframes rotator {
+    0%   { -moz-transform: rotateX(0deg)    rotateY(0deg);    }
+    100% { -moz-transform: rotateX(1080deg) rotateY(360deg);  }
+  }
+  @-ms-keyframes rotator {
+    0%   { -ms-transform: rotateX(0deg)    rotateY(0deg);    }
+    100% { -ms-transform: rotateX(1080deg) rotateY(360deg);  }
+  }
+  @-o-keyframes rotator {
+    0%   { -o-transform: rotateX(0deg)    rotateY(0deg);    }
+    100% { -o-transform: rotateX(1080deg) rotateY(360deg);  }
+  }
+  @keyframes rotator {
+    0%   { transform: rotateX(0deg)    rotateY(0deg);    }
+    100% { transform: rotateX(1080deg) rotateY(360deg);  }
+  } */
+
+  .container {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  td {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 200px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .the-input{
+    background-image: linear-gradient(to left, #8a00c2, #a000c8, #b100cd);
+  }
+
+  .number {
+    font-size: 200px;
+  }
+
+  .insert-number{
+    background-color: #e69b00;
+    margin-left: 40%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  footer {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+
+  .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
